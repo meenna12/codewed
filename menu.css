@@ -344,6 +344,14 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer-distributed .footer-center span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .footer-distributed .footer-icons {
     margin-top: 25px;
 }
@@ -362,6 +370,7 @@ footer {
     margin-right: 3px;
     margin-bottom: 5px;
 }
+
 
 .footer-distributed .footer-icons a:hover {
     background-color: #3F71EA;
