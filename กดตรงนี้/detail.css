@@ -1,0 +1,313 @@
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&family=Poppins&display=swap');
+
+/* ตั้งค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ตั้งค่า ฟอนต์*/
+body {
+    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    overflow-x: hidden;
+    background-color:#dddcdd;
+}
+
+
+
+/* เอาขีดเส้นใต้ออก */
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* ตั้งค่า พื้นหลัง ระยะห่าง อยู่รูปแบบแนวนอน ทุกส่วนอยู่กึ่งกลาง */
+nav {
+    background: #cb9043;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav {
+    box-shadow: 0 0 8px rgba(255, 138, 48, 0.5);
+}
+
+/* ตั้งค่าสี อักษรทั้งหมด */
+nav a {
+    color: #ffffff;
+}
+
+/* ตั้งค่าการวาง cursor ไอคอน เป็นการตรวจจับถ้าเอา cursor ไปชี้ */
+
+
+/* ตั้งค่า สัดส่วนให้อยู่ในแบบเหมาะสม */
+.logo {
+    flex: 1;
+}
+
+/* ตั้งค่า อยู่รูปแบบแนวนอน ทุกส่วนอยู่กึ่งกลาง ขนาดตัวอักษร */
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+
+/* ตั้งค่าการวาง cursor ไอคอน เป็นการตรวจจับถ้าเอา cursor ไปชี้ */
+
+.logo a:hover {
+    color: #000000;
+}
+
+/* ตั้งค่า ความกว้างรูป อักษรทั้งหมดอยู่ห่างจากทางขวาเท่าไร */
+.logo img {
+    width: 40px;
+    margin-right: 12px;
+}
+
+
+
+/* ตั้งค่า อยู่รูปแบบแนวนอน ทุกส่วนอยู่กึ่งกลาง เอาจุดออก */
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+/* ตั้งค่า ระยะห่าง หรือ แบบย่อย */
+.menu li {
+    padding: 10px 15px;
+    font-size: 17px;
+}
+
+/* ตั้งค่า อักษรทั้งหมดอยู่ห่างจากทางขวาเท่าไร */
+.menu i {
+    margin-right: 12px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container {
+    padding: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+
+.item-photo{
+    left: 50px;
+    padding: auto;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.781);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.48);
+    
+}
+
+.item-1 img {
+    border-radius: 15px;
+    height: 1%;
+}
+
+.Item-ingredient{
+    right: 50px;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.781);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.48);
+    
+}
+
+
+.text-how-to{
+    margin: 100px;
+    width: 90%;
+    padding: 100px;
+    line-height: 50px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.781);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.48);
+   
+}
+
+
+.text a{
+    padding: 5px;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 100px;
+    transition: .5s;
+}
+
+.text a:hover {
+    background-color: #ff8605;
+    color: #000000;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.footer-distributed {
+    display: flex;
+    background-color: #633800;
+    box-sizing: border-box;
+    width: 100vw;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 15px 50px 15px 50px;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #0e0e0e;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #ff7300;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+    border: 1;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-center span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
